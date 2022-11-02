@@ -158,11 +158,7 @@ namespace Fox_score.Find_Incompatible_Shaders
                         entry.Reset();
 
                     if (GUILayout.Button("Apply", GUILayout.Width(50)))
-                    {
                         entry.Apply();
-                        _incompatibleMaterials.RemoveAt(i);
-                        i--;
-                    }
                 }
 
                 EditorGUILayout.EndHorizontal();

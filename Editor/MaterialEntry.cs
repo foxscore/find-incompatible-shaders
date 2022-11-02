@@ -57,7 +57,7 @@ namespace Fox_score.Find_Incompatible_Shaders
         }
         
         // originalShader == null || ReplacementShader != originalShader
-        public bool ShaderChanged => ReplacementShader != originalShader;
+        public bool ShaderChanged => ReplacementShader != material.shader;
 
         private void GenerateMaterialCopy(Shader shader)
         {

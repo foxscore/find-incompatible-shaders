@@ -1,7 +1,7 @@
 {
   "name": "de.foxscore.find-incompatible-shaders",
   "displayName": "Find Incompatible Shaders",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2019.4",
   "description": "A tool to help you find and replace shaders that are incompatible with Quest avatars.",
   "keywords": [
