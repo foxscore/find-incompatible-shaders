@@ -1,7 +1,7 @@
 ﻿# Find Incompatible Shaders
 This package helps you find and replace shaders that are incompatible with Quest avatars.
 
-![Version 1.0.1](https://img.shields.io/badge/Version_1.0.1-gray.svg)
+![Version 1.0.2](https://img.shields.io/badge/Version_1.0.2-gray.svg)
 ![Made for VRChat SDK 3](https://img.shields.io/badge/Made_for_VRChat_SDK_3-gray.svg)
 
 ## Installation
