@@ -152,14 +152,16 @@ namespace Fox_score.Find_Incompatible_Shaders
                     entry.ReplacementShader = collection.shaders[shaderIndex];
 
                 // Button to revert to original shader
-                using (new EditorGUI.DisabledScope(!entry.ShaderChanged))
-                {
-                    if (GUILayout.Button("Reset", GUILayout.Width(50)))
-                        entry.Reset();
 
+                GUI.enabled = entry.ReplacementShader != entry.OriginalShader;
+                if (GUILayout.Button("Reset", GUILayout.Width(50)))
+                    entry.Reset();
+                
+                GUI.enabled = entry.ShaderChanged;
                     if (GUILayout.Button("Apply", GUILayout.Width(50)))
                         entry.Apply();
-                }
+                
+                GUI.enabled = true;
 
                 EditorGUILayout.EndHorizontal();
 
